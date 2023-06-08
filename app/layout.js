@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] }) //police d'écritures ?
 
 export const metadata = { //métadonnées du site, pour SEO
   title: 'Create Next App',
@@ -11,8 +11,7 @@ export const metadata = { //métadonnées du site, pour SEO
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
-      <body className={inter.className}>{children}
-      
+      <body className={inter.className}>{children}      
       </body>
     </html>
   )
