@@ -1,14 +1,14 @@
 .h1{
     color: blue;
   }
-.contact{
-    font-size: large;
-    color: red;
-  }
   .links, .lists{
     text-decoration: none;
     list-style: none;
   }
   .links:hover{
    color: red;
+  }
+  .header{
+    display: flex;
+    margin-inline: 1em;
   }

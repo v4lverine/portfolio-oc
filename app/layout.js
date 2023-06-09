@@ -1,7 +1,9 @@
+//code global = à mettre dans un app.js ou laisser tel quel ?
+
 import React from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
-// import './globals.css'
+import './globals.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] }) //police d'écritures

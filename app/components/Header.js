@@ -2,7 +2,7 @@ import styles from './components.module.css'
 
 export default function Banner(){
     return(
-        <header>
+        <header className={styles.header}>
             <h1 className={styles.h1}>valverine - Développeuse web</h1>
             <nav>
                 <ul className={styles.lists}>

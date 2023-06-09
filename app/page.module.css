@@ -1,8 +1,11 @@
-.main {
+.main{
+  background-color: blanchedalmond;
+}
+.section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  margin-inline: 1em;
+}
+.contact{
+  font-size: large;
+  color: red;
 }
