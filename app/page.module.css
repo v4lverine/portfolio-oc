@@ -9,6 +9,10 @@
 .h1{
   color: blue;
 }
+.contact{
+  font-size: large;
+  color: red;
+}
 
 .description {
   display: inherit;

@@ -1,13 +1,17 @@
-export default function Footer() {
-    const socialsNets = ['Twitter', 'LinkedIn', 'Instagram', 'Twitch'];
+import datas from "../datas.json"
 
-    const listSocials = socialsNets.map((social, index) => 
-    <li key={index}>{social}</li>
+export default function Footer() {
+
+    const listSocials = datas.map((data) => 
+    <li key={data.id}>
+        <a href={data.url}>{data.name}</a>
+    </li>
     )
 
     return(
         <footer>
-            <nav><h4>Retrouvez-moi sur les réseaux</h4>
+            <h4>Retrouvez-moi sur les réseaux !</h4>
+            <nav>
                 <ul>{listSocials}</ul>
             </nav>
         </footer>

@@ -1,17 +1,13 @@
-import Image from 'next/image'
+import Link from 'next/link'
 import styles from './page.module.css'
-// import Link from 'next/link'
-import Header from './components/Header'
-import Footer from './components/Footer'
 
 export default function Home() {
   return (
     <div>
-      <Header/>
       <main className={styles.main}>
-      <p>Hello World !</p>
+      <p>Contact</p>
+      <Link href='/contact'>Suivre ce lien </Link>
       </main>
-      <Footer/>
     </div>
   )
 }
