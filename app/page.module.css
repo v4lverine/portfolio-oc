@@ -13,6 +13,13 @@
   font-size: large;
   color: red;
 }
+.links, .lists{
+  text-decoration: none;
+  list-style: none;
+}
+.links:hover{
+ color: red;
+}
 
 .description {
   display: inherit;

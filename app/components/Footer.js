@@ -1,10 +1,11 @@
 import datas from "../datas.json"
+import styles from '../page.module.css'
 
 export default function Footer() {
 
     const listSocials = datas.map((data) => 
     <li key={data.id}>
-        <a href={data.url}>{data.name}</a>
+        <a href={data.url} className={styles.links}>{data.name}</a>
     </li>
     )
 
@@ -12,7 +13,7 @@ export default function Footer() {
         <footer>
             <h4>Retrouvez-moi sur les réseaux !</h4>
             <nav>
-                <ul>{listSocials}</ul>
+                <ul className={styles.lists}>{listSocials}</ul>
             </nav>
         </footer>
     )
