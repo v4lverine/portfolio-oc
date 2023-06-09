@@ -1,5 +1,5 @@
 import datas from "../datas.json"
-import styles from '../page.module.css'
+import styles from './components.module.css'
 
 export default function Footer() {
 
