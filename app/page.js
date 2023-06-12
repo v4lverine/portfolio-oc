@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from './page.module.css'
 import Image from './components/Image'
 import Presentation from './components/Presentation'
+import Skills from './components/Skills'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
           Après une épopée dans le journalisme, je me lance dans le développement web. <br/>
           Ce site vous permet d'avoir un aperçu des différents travaux que j'ai pu faire tout au long de ma carrière. <br/>
         </Presentation>
+        <Skills />
     </main>
   )
 }

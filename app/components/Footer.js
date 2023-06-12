@@ -3,9 +3,9 @@ import styles from './components.module.css'
 
 export default function Footer() {
 
-    const listSocials = datas.map((data) => 
-    <li key={data.id}>
-        <a href={data.url} className={styles.links}>{data.name}</a>
+    const listSocials = datas.map((social) => 
+    <li key={social.id}>
+        <a href={social.url} className={styles.links}>{social.name}</a>
     </li>
     )
 
