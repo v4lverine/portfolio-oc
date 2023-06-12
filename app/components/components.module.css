@@ -9,9 +9,11 @@
    color: red;
   }
   .header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 1rem;
+    padding-block: 0.5rem;
     display: flex;
-    margin-inline: 1em;
-  }
-  .stars{
-    color: red;
+    justify-content: space-between;
   }

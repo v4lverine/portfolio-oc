@@ -3,6 +3,8 @@ import styles from './page.module.css'
 import Image from './components/Image'
 import Presentation from './components/Presentation'
 import Skills from './components/Skills'
+import Works from './components/Works'
+import Hobbies from './components/Hobbies'
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
           Ce site vous permet d'avoir un aperçu des différents travaux que j'ai pu faire tout au long de ma carrière. <br/>
         </Presentation>
         <Skills />
+        <Works />
+        <Hobbies />
     </main>
   )
 }
