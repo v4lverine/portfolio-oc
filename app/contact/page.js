@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "../page.module.css"
 import Presentation from "../components/Presentation";
+import ContactForm from "../components/ContactForm"
 
 export default function Contact(){
     return (
@@ -11,6 +12,7 @@ export default function Contact(){
                 Bien évidemment, je vous répondrai dans les plus brefs délais !
             </Presentation>
             <Link href='/' className={styles.contact}>Retour sur la page d'accueil</Link>
+            <ContactForm />
         </div>
         
     )

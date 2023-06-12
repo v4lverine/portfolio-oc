@@ -15,20 +15,20 @@ export const metadata = { //métadonnées du site, pour SEO
   twitter: {
     card: 'summary_large_image',
     title: 'valverine - Développeuse Web',
-    // url:,
+    // url:'',
     description: 'Bienvenue sur le portfolio de valverine. Développeuse web full-stack',
     creator: '@valverine_',
-    // images: ['https://nextjs.org/og.png'],
+    // images: [''],
   },
   openGraph: {
       title: 'valverine - Développeuse web',
       description: 'Bienvenue sur le portfolio de valverine. Développeuse web full-stack',
-      // url: 'https://nextjs.org',
+      // url: '',
       // siteName: '',
       // images:,
-      locale: 'fr_FR',
-      type: 'website',
-  }
+  },
+  locale: 'fr_FR',
+  type: 'website',
 }
 
 //structure de la page, children = charge page selon la route, page de app = '/'
