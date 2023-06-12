@@ -1,9 +1,9 @@
-import datas from "../datas.json"
+import socials from "../datas/socials.json"
 import styles from './components.module.css'
 
 export default function Footer() {
 
-    const listSocials = datas.map((social) => 
+    const listSocials = socials.map((social) => 
     <li key={social.id}>
         <a href={social.url} className={styles.links}>{social.name}</a>
     </li>

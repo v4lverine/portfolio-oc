@@ -14,5 +14,11 @@ export default function Skills() {
         <p>NextJS 2.5 étoiles</p>
         <p>Back-end 3 étoiles</p>
         <p>Front-end 4 étoiles</p>
+        <p>Gestion de projet 2 étoiles</p>
+        <p>Méthode agile SCRUM 3 étoiles</p>
+        <p>Optimisation de l'accessibilité d'un site 4 étoiles</p>
+        <p>Référencement naturel (SEO) 4 étoiles</p>
+        <p>Référencement local (Schema.org) 4 étoiles</p>
+        {/* <p>mettre dans un fichier JSON pour bdd</p> */}
     </article>)
 } 
