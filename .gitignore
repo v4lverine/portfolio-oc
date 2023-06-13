@@ -35,7 +35,7 @@ skills.json
 .vercel
 
 # # local images directory
-# /public/images
+/public/images
 
 # typescript
 *.tsbuildinfo

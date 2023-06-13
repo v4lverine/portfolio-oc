@@ -8,10 +8,9 @@ import Hobbies from './components/Hobbies'
 
 export default function Home() {
   return (
- 
     <main className={styles.main}>
         <Presentation label='Qui suis-je ?'>
-        <Image />
+          <Image src='/images/profile.jpg' alt='Photo de profil de valverine' />
           Vous avez vu de la lumière et vous êtes entrés ? Bien. <br/>
           Bonjour et bienvenue sur le site de valverine a.k.a. Valentine. <br/>
           Après une épopée dans le journalisme, je me lance dans le développement web. <br/>

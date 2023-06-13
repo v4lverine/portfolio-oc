@@ -3,10 +3,12 @@
 import React from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
+import { Raleway } from 'next/font/google'
 import './globals.css'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] }) //police d'écritures
+const raleway = Raleway({
+  subsets: ['latin']
+})
 
 export const metadata = { //métadonnées du site, pour SEO
   title: 'valverine - Développeuse web',
@@ -32,11 +34,10 @@ export const metadata = { //métadonnées du site, pour SEO
 }
 
 //structure de la page, children = charge page selon la route, page de app = '/'
-//inter.classname = charge la police d'écriture prédéfinie
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
-      <body className={inter.className}>
+    <html lang="fr" className={raleway.className}>
+      <body>
         <Header/>
         {children}
         <Footer/>      

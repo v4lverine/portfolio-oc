@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
-const profilePic = () => (
+const profilePic = (props) => (
     <Image
-    src='/images/profile.jpg'
-    height={144}
-    width={144}
+    src={props.src}
+    height={100}
+    width={100}
     quality={50}
-    alt='Photo de profil du site de Valentine B.'
+    alt={props.alt}
     />
 );
 
