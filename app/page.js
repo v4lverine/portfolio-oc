@@ -10,12 +10,8 @@ export default function Home() {
   return (
  
     <main className={styles.main}>
-        <section className={styles.section}>
-          <Image />  
-          <p>Contact</p>
-          <Link href='/contact' className={styles.links}>Besoin d'informations ? Contactez-moi</Link>
-        </section>
         <Presentation label='Qui suis-je ?'>
+        <Image />
           Vous avez vu de la lumière et vous êtes entrés ? Bien. <br/>
           Bonjour et bienvenue sur le site de valverine a.k.a. Valentine. <br/>
           Après une épopée dans le journalisme, je me lance dans le développement web. <br/>
@@ -24,6 +20,9 @@ export default function Home() {
         <Skills />
         <Works />
         <Hobbies />
+        <Presentation label='Contact'>
+          <Link href='/contact' className={styles.links}>Besoin d'informations ? Contactez-moi</Link>
+        </Presentation>
     </main>
   )
 }

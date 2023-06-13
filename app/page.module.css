@@ -1,9 +1,6 @@
 .main{
   background-color: blanchedalmond;
-}
-.section {
-  display: flex;
-  margin-inline: 1em;
+  margin-inline: 2em;
 }
 .contact{
   font-size: large;

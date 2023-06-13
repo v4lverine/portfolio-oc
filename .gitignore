@@ -29,6 +29,7 @@ yarn-error.log*
 .env
 socials.json
 works.json
+skills.json
 
 # vercel
 .vercel
