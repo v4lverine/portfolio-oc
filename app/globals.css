@@ -1,3 +1,7 @@
+:root{
+  --greenish: rgb(89, 150, 105);
+}
+
 html, body{
   margin: 0;
   padding: 0;

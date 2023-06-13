@@ -1,8 +1,17 @@
 .main{
-  background-color: blanchedalmond;
   margin-inline: 2em;
 }
 .contact{
   font-size: large;
   color: red;
+}
+.presBlock{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: right;
+}
+.presBlock p{
+  width: 40%;
+  font-size: 1.3em;
+  padding-right: 10%;
 }

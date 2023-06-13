@@ -5,7 +5,7 @@ import ContactForm from "../components/ContactForm"
 
 export default function Contact(){
     return (
-        <div>
+        <main>
             <Presentation label='Des questions ? Des remarques ? Des compliments à me faire ?'>
                 Si vous avez besoin de plus d'informations sur mes différents services, <br/>
                 vous pouvez me contacter via le formulaire ci-dessous. <br/>
@@ -13,7 +13,7 @@ export default function Contact(){
             </Presentation>
             <Link href='/' className={styles.contact}>Retour sur la page d'accueil</Link>
             <ContactForm />
-        </div>
+        </main>
         
     )
 }

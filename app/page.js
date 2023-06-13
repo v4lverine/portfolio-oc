@@ -10,11 +10,13 @@ export default function Home() {
   return (
     <main className={styles.main}>
         <Presentation label='Qui suis-je ?'>
-          <Image src='/images/profile.jpg' alt='Photo de profil de valverine' />
-          Vous avez vu de la lumière et vous êtes entrés ? Bien. <br/>
-          Bonjour et bienvenue sur le site de valverine a.k.a. Valentine. <br/>
-          Après une épopée dans le journalisme, je me lance dans le développement web. <br/>
-          Ce site vous permet d'avoir un aperçu des différents travaux que j'ai pu faire tout au long de ma carrière. <br/>
+          <div className={styles.presBlock} >
+            <Image src='/images/profile.jpg' alt='Photo de profil de valverine' />
+            <p>Vous avez vu de la lumière et vous êtes entrés ? Bien. <br/>
+            Bonjour et bienvenue sur le site de valverine a.k.a. Valentine.
+            Après une épopée dans le journalisme, je me lance dans le développement web.
+            Ce site vous permet d'avoir un aperçu des différents travaux que j'ai pu faire tout au long de ma carrière.</p>
+          </div>
         </Presentation>
         <Skills />
         <Works />
