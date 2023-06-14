@@ -1,9 +1,9 @@
 "use client"
-import styles from './components.module.css' 
+import styles from './components.module.scss' 
 import styled from 'styled-components'
 import Image from './ShortImage'
 import NavigateHeader from './NavigateHeader'
-import React, {useState, useEffect} from 'react'
+// import React, {useState, useEffect} from 'react'
 
 const BlockTitle = styled.div`
     display: flex;

@@ -1,4 +1,4 @@
-import styles from './components.module.css' 
+import styles from './components.module.scss' 
 
 export default function NavigateHeader(){
     const navHeader = ['présentation', 'travaux', 'contact']

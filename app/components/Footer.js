@@ -1,5 +1,5 @@
 import socials from "../datas/socials.json"
-import styles from './components.module.css'
+import styles from './components.module.scss'
 
 export default function Footer() {
 

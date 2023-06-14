@@ -4,7 +4,7 @@ import React from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { Raleway } from 'next/font/google'
-import './globals.css'
+import './globals.scss'
 
 const raleway = Raleway({
   subsets: ['latin']

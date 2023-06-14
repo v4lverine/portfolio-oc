@@ -8,7 +8,7 @@
     list-style: none;
   }
 .links:hover{
-   color: red;
+   color: var(--redish);
    font-weight: 100;
   }
 .listHeader{
@@ -27,11 +27,11 @@
     background-position:50% 100%;
     background-repeat: no-repeat;
     transition: .3s linear, background-size .3s .2s linear;
-  }
-.selectList:hover {
-    background-size: 40% .1em;
-    background-position: 10% 100%, 90% 100%;
-    text-shadow: 0.5px 0.5px 0px rgba(46, 46, 37, 0.622);
+    &:hover{
+      background-size: 40% .1em;
+      background-position: 10% 100%, 90% 100%;
+      text-shadow: 0.5px 0.5px 0px rgba(46, 46, 37, 0.622);
+    }
   }
 .header{
     position: sticky;
