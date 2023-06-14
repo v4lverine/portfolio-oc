@@ -3,6 +3,7 @@ import styles from './components.module.css'
 import styled from 'styled-components'
 import Image from './ShortImage'
 import NavigateHeader from './NavigateHeader'
+import React, {useState, useEffect} from 'react'
 
 const BlockTitle = styled.div`
     display: flex;
@@ -12,7 +13,8 @@ const BlockTitle = styled.div`
     margin-left: 50px
 `
 
-export default function Banner(){
+export default function Header(){
+
     return(
         <header className={styles.header}>
             <BlockTitle>
