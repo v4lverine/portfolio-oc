@@ -9,10 +9,11 @@ import Hobbies from './components/Hobbies'
 export default function Home() {
   return (
     <main className={styles.main}>
-        <Presentation label='Qui suis-je ?' >
+        <Presentation label='Qui suis-je ?'>
           <div className={styles.presBlock}>
-            <LargeImage src='/images/profile.jpg' alt='Photo de profil de valverine' />
-            <p>Bonjour je m'appelle Valentine aka valverine, développeuse web front-end / SEO.</p>
+            <LargeImage src='/images/profile.jpg' alt='Photo de profil de valverine'/>
+            <p>Bonjour je m'appelle Valentine aka <span className={styles.underline}>valverine</span>, 
+            développeuse web front-end / SEO.</p>
           </div>
         </Presentation>
         <Skills />

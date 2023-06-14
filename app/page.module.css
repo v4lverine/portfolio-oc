@@ -1,6 +1,3 @@
-.main{
-  margin-inline: 2em;
-}
 .contact{
   font-size: large;
   color: red;
@@ -9,9 +6,23 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: right;
+  background-color: beige;
 }
 .presBlock p{
   width: 40%;
   font-size: 3em;
   padding-right: 10%;
+  letter-spacing: 2px;
+  text-align: right;
+  color: var(--greyish);
+}
+.underline{
+  background-image: linear-gradient(120deg, #83dea4 0%, #acffcb 50%,#7ade9f 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.underline:hover {
+  background-size: 100% 88%;
 }

@@ -7,6 +7,9 @@ const largePictures = (props) => (
     width={500}
     quality={50}
     alt={props.alt}
+    // placeholder='blur'
+    // blurDataURL='' lorsque l'image aura un domaine (?), ajouter via next.config.js
+    priority
     />
 );
 
