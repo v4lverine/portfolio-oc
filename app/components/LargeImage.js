@@ -1,13 +1,13 @@
 import Image from 'next/image'
 
-const profilePic = (props) => (
+const largePictures = (props) => (
     <Image
     src={props.src}
-    height={100}
-    width={100}
+    height={500}
+    width={500}
     quality={50}
     alt={props.alt}
     />
 );
 
-export default profilePic
+export default largePictures

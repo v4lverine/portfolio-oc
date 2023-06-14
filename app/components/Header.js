@@ -1,7 +1,7 @@
 "use client"
 import styles from './components.module.css' 
 import styled from 'styled-components'
-import Image from '../components/Image'
+import Image from './ShortImage'
 import NavigateHeader from './NavigateHeader'
 
 const BlockTitle = styled.div`
