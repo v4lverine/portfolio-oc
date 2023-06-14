@@ -20,5 +20,8 @@
     "react-dom": "18.2.0",
     "sass": "^1.63.4",
     "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.3"
   }
 }
