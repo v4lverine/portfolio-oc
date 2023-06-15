@@ -27,9 +27,9 @@ export default function Works() {
                 <SwiperSlide key={work.id} className={styles.swipe}>
                     <img src={work.image} 
                     style={{
-                        width:'650px', 
-                        height:'400px', 
-                        opacity:'0.3'}}/>
+                        width:'750px', 
+                        height:'450px', 
+                        opacity:'0.2'}}/>
                     <div style={{position:'absolute', top:'0'}}>
                         <h4>{work.title}</h4>
                         <p>{work.description}</p>

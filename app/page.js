@@ -18,7 +18,7 @@ export default function Home() {
         </Presentation>
         <Skills />
         <Works />
-        <Hobbies />
+        {/* <Hobbies /> */}
         <Presentation label='Contact'>
           <Link href='/contact' className={styles.links}>Besoin d'informations ? Contactez-moi</Link>
         </Presentation>
