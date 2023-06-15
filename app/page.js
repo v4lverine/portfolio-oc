@@ -4,7 +4,7 @@ import LargeImage from './components/LargeImage'
 import Presentation from './components/Presentation'
 import Skills from './components/Skills'
 import Works from './components/Works'
-import Hobbies from './components/Hobbies'
+// import Hobbies from './components/Hobbies'
 
 export default function Home() {
   return (
@@ -19,8 +19,14 @@ export default function Home() {
         <Skills />
         <Works />
         {/* <Hobbies /> */}
-        <Presentation label='Contact'>
-          <Link href='/contact' className={styles.links}>Besoin d'informations ? Contactez-moi</Link>
+        <Presentation label='Comment me contacter ?'>
+          <div className={styles.contactBlock}>
+            <p>Vous souhaitez me contacter ? Me poser des questions sur un point en particulier ? 
+            Ou me complimenter pour mes travaux ? <br/>
+            Vous pouvez m'écrire en cliquant juste<Link href='/contact' className={`${styles.links} ${styles.underline}`}> ici </Link>! <br/>
+            Temps de réponse estimé : {/*mettre un genre de temps de chargement*/} ...
+            </p>
+          </div>
         </Presentation>
     </main>
   )

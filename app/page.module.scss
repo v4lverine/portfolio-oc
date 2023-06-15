@@ -1,7 +1,4 @@
-.contact{
-  font-size: large;
-  color: red;
-}
+/*presentation block*/
 .presBlock{
   display: flex;
   flex-direction: row-reverse;
@@ -51,4 +48,22 @@
     color: black;
     text-shadow: 1px 1px 0px rgba(245, 245, 220, 0.622);
   }
+}
+
+/*contact block*/
+.links{
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--beigish);
+}
+.contactBlock{
+  color: var(--beigish);
+  font-size: 2em;
+  margin-inline: 300px;
+  width: 650px;
+  line-height: 60px;
+  padding: 50px;
+  background-color: var(--greenish);
+  box-shadow: black 2px 2px 2px;
+  border-radius: 25px;
 }
