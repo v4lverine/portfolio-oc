@@ -21,14 +21,20 @@ export default function Works() {
             navigation={true}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
-            style={{height: '350px', width:'650px'}}
+            style={{height: '450px', width:'750px'}}
             >
                 {works.map((work) => 
                 <SwiperSlide key={work.id} className={styles.swipe}>
-                    <img src={work.image} style={{width:'150px', height:'25px'}}/>
-                    <h4>{work.title}</h4>
-                    <p>{work.description}</p>
-                    <a href={work.url}>{work.captionUrl}</a>
+                    <img src={work.image} 
+                    style={{
+                        width:'650px', 
+                        height:'400px', 
+                        opacity:'0.3'}}/>
+                    <div style={{position:'absolute', top:'0'}}>
+                        <h4>{work.title}</h4>
+                        <p>{work.description}</p>
+                        <a href={work.url}>{work.captionUrl}</a>
+                    </div>
                 </SwiperSlide>)}
             </Swiper>
         </div>

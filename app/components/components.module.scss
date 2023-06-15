@@ -90,8 +90,24 @@
   .swipe{
     text-align: center;
     font-size: 1.3em;
+    position: relative;
+    z-index: 1;
+    color:var(--beigish);
+    background-color: rgba(168, 168, 168, 0.6);
+    border-radius: 10px;
+    
     h4{
       text-transform: uppercase;
-      font-size: 1.4em;
+      font-size: 1.5em;
+      padding-inline: 5%;
+      -webkit-text-stroke: #000000 1px;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.55);
+      letter-spacing: 2px;
+    }
+    p{
+      -webkit-text-stroke: #000000 0.3px;
+      padding-inline: 5%;
+      text-shadow: 1px 1px 1px rgb(0, 0, 0);
+      font-size: 1.3em;
     }
   }
