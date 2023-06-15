@@ -1,19 +1,37 @@
+"use client"
 import works from "../datas/works.json"
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import styles from './components.module.scss'
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
+import 'swiper/scss/scrollbar';
 
 export default function Works() {
-    const listWorks = works.map((work) => 
-    <li key={work.id}>
-        <h4>{work.title}</h4>
-        <p>{work.description}</p>
-        <a href={work.url}>{work.captionUrl}</a>
-    </li>
-    )
 
     return(
-        <section>
-            <h2>Mes différents travaux (en slideshow ?)</h2>
-                <h3>En développement</h3>
-                <ul>{listWorks}</ul>
-        </section>
+    <section className={styles.workBlock}>
+        <h2>Mes différents travaux</h2>
+        <div className={styles.carousel}>
+            <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={75}
+            slidesPerView={1}
+            navigation={true}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            style={{height: '350px', width:'650px'}}
+            >
+                {works.map((work) => 
+                <SwiperSlide key={work.id} className={styles.swipe}>
+                    <img src={work.image} style={{width:'150px', height:'25px'}}/>
+                    <h4>{work.title}</h4>
+                    <p>{work.description}</p>
+                    <a href={work.url}>{work.captionUrl}</a>
+                </SwiperSlide>)}
+            </Swiper>
+        </div>
+    </section>
     )
 } 

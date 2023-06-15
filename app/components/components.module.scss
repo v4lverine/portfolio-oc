@@ -78,3 +78,20 @@
       border: var(--beigish) solid 3px;
     }
   }
+
+  /*work carousel*/
+  .workBlock{
+    background-color: var(--beigish);
+    padding-bottom: 70px ;
+  }
+  .carousel{
+    padding-inline: 100px;
+  }
+  .swipe{
+    text-align: center;
+    font-size: 1.3em;
+    h4{
+      text-transform: uppercase;
+      font-size: 1.4em;
+    }
+  }
