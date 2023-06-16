@@ -22,8 +22,8 @@ export default function Footer() {
     }
     return (
       <li key={social.id}>
-        <a href={social.url} className={styles.links}>
-          <FontAwesomeIcon icon={icon} className={styles.toto} />
+        <a href={social.url} className={styles.navFooterLinks}>
+          <FontAwesomeIcon icon={icon} className={styles.brands} />
           {social.name}
         </a>
       </li>
@@ -31,10 +31,12 @@ export default function Footer() {
   });
 
   return (
-    <footer>
+    <footer className={styles.footer}>
       <h2>Retrouvez-moi sur les réseaux !</h2>
       <nav>
-        <ul className={styles.lists}>{listSocials}</ul>
+        <ul className={`${styles.lists} ${styles.socialsNav}`}>
+          {listSocials}
+        </ul>
       </nav>
     </footer>
   );
