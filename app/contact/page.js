@@ -14,6 +14,6 @@ export default function Contact(){
             <Link href='/' className={styles.contact}>Retour sur la page d'accueil</Link>
             <ContactForm />
         </main>
-        
+ 
     )
 }

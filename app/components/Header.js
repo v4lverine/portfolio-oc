@@ -1,4 +1,4 @@
-"use client"
+"use client" //pour chargement côté client
 import styles from './components.module.scss' 
 import styled from 'styled-components'
 import Image from './ShortImage'
