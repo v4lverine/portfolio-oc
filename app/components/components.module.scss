@@ -133,7 +133,7 @@
 
 //footer nav
 .footer {
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 15px 0 15px;
   box-shadow: rgba(50, 50, 93, 0.25) 0 0 5px 0;
 }
@@ -179,16 +179,16 @@
 /*contact form in contact page*/
 .contactForm {
   display: flex;
-  // flex-direction: column;
   flex-flow: column wrap;
-  border: #575757 solid 0.4px;
   width: 400px;
-  padding: 75px;
-  font-size: 1.8em;
-  border-radius: 50px;
-  :focus {
-    background: -webkit-linear-gradient(left, var(--greenish), var(--beigish));
-  }
+  padding: 30px 75px;
+  font-size: 1.5em;
+  height: 500px;
+  box-shadow: -16px 2px 17px 2px rgba(0, 0, 0, 0.2);
+  // :focus {
+  //   background: -webkit-linear-gradient(left, var(--greenish), var(--beigish));
+  // }
+  background-color: var(--beigish);
   & input,
   textarea {
     height: 4em;

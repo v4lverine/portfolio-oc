@@ -71,3 +71,20 @@
   box-shadow: black 2px 2px 2px;
   border-radius: 25px;
 }
+
+//contact page
+.entireContactBlock {
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+  margin-left: 17%;
+  margin-top: 50px;
+}
+.contactTextBlock {
+  display: flex;
+  flex-direction: column;
+  padding-block: 136px;
+  padding-inline: 35px;
+  background-color: #7ade9f;
+}

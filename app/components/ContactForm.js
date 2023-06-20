@@ -3,23 +3,29 @@
 import { useState } from "react";
 import styled from "styled-components";
 import styles from "./components.module.scss";
+import { Raleway } from "next/font/google";
 
 const Button = styled.button`
-  background: transparent;
-  border-radius: 3px;
-  border: 2px solid #bf4f74;
+  // background: transparent;
+  border-radius: 50px;
+  border: 2px solid var(--greenish);
   font-size: 1em;
-  //   :active {
-  //     background-color: #000;
-  //   }
+  cursor: pointer;
+  width: 40%;
+  padding-block: 10px;
+  margin-inline: 25%;
+  font-size: 0.8em;
 `;
+const raleway = Raleway({
+  subsets: ["latin"],
+});
 
 export default function ContactForm() {
   const [formStatus, setFormStatus] = useState("Envoyer");
   return (
     <section className={styles.sectionForm}>
       <form className={styles.contactForm} action="#">
-        <label htmlFor="name" className={styles.placeholder}>
+        <label htmlFor="name" style={{ visibility: "hidden" }}>
           Prénom/Nom
         </label>
         <input
@@ -29,7 +35,7 @@ export default function ContactForm() {
           placeholder="Prénom / Nom"
           required
         />
-        <label htmlFor="email" className={styles.placeholder}>
+        <label htmlFor="email" style={{ visibility: "hidden" }}>
           E-mail
         </label>
         <input
@@ -39,7 +45,7 @@ export default function ContactForm() {
           placeholder="Adresse e-mail"
           required
         />
-        <label htmlFor="message" className={styles.placeholder}>
+        <label htmlFor="message" style={{ visibility: "hidden" }}>
           Message
         </label>
         <textarea
@@ -49,7 +55,7 @@ export default function ContactForm() {
           placeholder="Message"
           required
         ></textarea>
-        <Button>{formStatus}</Button>
+        <Button className={raleway.className}>{formStatus}</Button>
       </form>
     </section>
   );
