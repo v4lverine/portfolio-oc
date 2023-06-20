@@ -14,7 +14,9 @@ export default function Contact() {
             vous pouvez me contacter via le formulaire ci-dessous. <br />
             Bien évidemment, je vous répondrai dans les plus brefs délais !
           </Presentation>
-          <Link href="/">Retour sur la page d'accueil</Link>
+          <Link href="/" className={styles.contactToHomeLink}>
+            Retour sur la page d'accueil
+          </Link>
         </div>
         <ContactForm />
       </section>

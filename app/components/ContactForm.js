@@ -52,6 +52,7 @@ export default function ContactForm() {
           name="message"
           minLength={100}
           maxLength={2000}
+          id="message"
           placeholder="Message"
           required
         ></textarea>
