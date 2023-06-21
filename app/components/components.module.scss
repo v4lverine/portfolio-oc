@@ -82,7 +82,11 @@
 /*work carousel*/
 .workBlock {
   background-color: var(--beigish);
-  padding-bottom: 70px;
+  padding-block: 50px;
+  & h2 {
+    margin-block: 0;
+    margin-bottom: 15px;
+  }
 }
 .carousel {
   padding-inline: 100px;
