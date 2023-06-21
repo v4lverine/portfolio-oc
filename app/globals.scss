@@ -1,13 +1,23 @@
 :root {
   --greenish: rgb(89, 150, 105);
   --greyish: rgb(108, 103, 110);
-  --redish: red;
   --beigish: rgb(245, 245, 220);
 }
+
+@import url("https://fonts.googleapis.com/css?family=Delius+Unicase");
 
 html,
 body {
   margin: 0;
   padding: 0;
   scroll-padding-top: 170px; /*for automatic scrolling anchor*/
+}
+* h2 {
+  margin-left: 15px;
+  background-color: white;
+  color: var(--greenish);
+  font-size: 2em;
+  text-transform: uppercase;
+  width: fit-content;
+  font-family: "Delius Unicase", serif;
 }

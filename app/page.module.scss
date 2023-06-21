@@ -1,20 +1,7 @@
-@mixin themeH2($theme: #fff) {
-  margin-bottom: 0;
-  margin-inline: 150px;
-  background-color: $theme;
-  color: var(--greenish);
-  font-size: 2em;
-  text-transform: uppercase;
-  width: fit-content;
-}
-
 /*presentation block*/
 .secPres {
   background-color: var(--beigish);
   padding: 1px 0 35px 0;
-  & h2 {
-    @include themeH2;
-  }
 }
 .presBlock {
   display: flex;
@@ -71,11 +58,6 @@
 }
 
 /*contact block in homepage*/
-.wholeContactBlock {
-  & h2 {
-    @include themeH2();
-  }
-}
 .links {
   text-decoration: none;
   font-weight: 600;
@@ -109,6 +91,9 @@
   padding-block: 136px;
   padding-inline: 35px;
   background-color: #7ade9f;
+  & h2 {
+    font-size: 1.2em;
+  }
 }
 .contactToHomeLink {
   text-decoration: none;
