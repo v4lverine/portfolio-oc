@@ -86,13 +86,19 @@
 }
 .contactTextBlock {
   display: flex;
-  color: rgb(84, 84, 84);
+  color: black;
   flex-direction: column;
-  padding-block: 136px;
+  padding-block: 100px;
   padding-inline: 35px;
   background-color: #7ade9f;
   & h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    text-align: center;
+    margin-left: 0;
+    padding: 20px;
+    color: var(--greyish);
+    background: rgba(245, 245, 220, 0.622);
+    border-radius: 220px 120px 220px 120px;
   }
 }
 .contactToHomeLink {

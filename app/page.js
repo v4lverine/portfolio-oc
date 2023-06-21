@@ -25,9 +25,7 @@ export default function Home() {
         </Presentation>
       </section>
       <Skills />
-      {/* <section > */}
       <Works />
-      {/* </section> */}
       {/* <Hobbies /> */}
       <section className={styles.wholeContactBlock}>
         <Presentation label="Comment me contacter ?">
