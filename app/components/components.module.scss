@@ -4,7 +4,6 @@
   padding-left: 20px;
 }
 .lists {
-  text-decoration: none;
   list-style: none;
 }
 .listHeader {
@@ -16,6 +15,7 @@
   color: #575757;
   font-size: 1.5em;
   --c: linear-gradient(var(--greenish) 0 0);
+  text-decoration: none;
 
   padding-bottom: 0.15em;
   background: var(--c), var(--c);

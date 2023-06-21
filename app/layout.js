@@ -44,7 +44,10 @@ export default function RootLayout({ children }) {
     <html lang="fr" className={raleway.className}>
       <body>
         <Header />
-        <Background src="/images/aibg.png" />
+        <Background
+          src="/images/aibg.png"
+          alt="Image en arrière-plan créée par l'IA sur le site Canva, représentant un paysage mêlant savane et jungle."
+        />
         {children}
         <Footer />
       </body>
