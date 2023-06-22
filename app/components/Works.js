@@ -10,7 +10,7 @@ import "swiper/scss/scrollbar";
 
 export default function Works() {
   return (
-    <section className={styles.workBlock} id="worksBlock">
+    <section className={styles.workBlock} id="works">
       <h2>Mes différents travaux</h2>
       <div className={styles.carousel}>
         <Swiper

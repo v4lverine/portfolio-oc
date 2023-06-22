@@ -11,7 +11,7 @@ export default function Home() {
     <main className={styles.main}>
       <section className={styles.secPres}>
         <Presentation label="Qui suis-je ?">
-          <div className={styles.presBlock} id="presBlock">
+          <div className={styles.presBlock} id="presentation">
             <LargeImage
               src="/images/profile.jpg"
               alt="Photo de profil de valverine"

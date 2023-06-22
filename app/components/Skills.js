@@ -14,7 +14,7 @@ export default function Skills() {
 
   return (
     <article>
-      <h2 id="skillsBlock">
+      <h2 id="skills">
         Mes différentes compétences dans le domaine du développement web
       </h2>
       <ul className={styles.listSkills}>{listSkills}</ul>

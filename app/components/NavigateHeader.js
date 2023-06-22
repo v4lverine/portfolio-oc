@@ -4,15 +4,15 @@ export default function NavigateHeader() {
   const navHeader = [
     {
       name: "présentation",
-      path: "/#presBlock",
+      path: "/#presentation",
     },
     {
       name: "skills",
-      path: "/#skillsBlock",
+      path: "/#skills",
     },
     {
       name: "travaux",
-      path: "/#worksBlock",
+      path: "/#works",
     },
     { name: "contact", path: "/contact" },
   ];
