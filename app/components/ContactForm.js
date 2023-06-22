@@ -88,7 +88,7 @@ export default function ContactForm() {
         </label>
         <textarea
           name="message"
-          // minLength={100}
+          minLength={100}
           maxLength={2000}
           id="message"
           value={message}
