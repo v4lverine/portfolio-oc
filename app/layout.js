@@ -20,7 +20,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "valverine - Développeuse Web",
-    // url:'',
+    // url:'https://valverine.fr',
     description:
       "Bienvenue sur le portfolio de valverine. Développeuse web full-stack",
     creator: "@valverine_",
@@ -30,8 +30,8 @@ export const metadata = {
     title: "valverine - Développeuse web",
     description:
       "Bienvenue sur le portfolio de valverine. Développeuse web full-stack",
-    // url: '',
-    // siteName: '',
+    // url: 'https://valverine.fr',
+    // siteName: 'valverine - Développeuse web',
     // images:,
   },
   locale: "fr_FR",
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Background
           src="/images/aibg.png"
-          alt="Image en arrière-plan créée par l'IA sur le site Canva, représentant un paysage mêlant savane et jungle."
+          alt="Image en arrière-plan représentant un paysage mêlant savane et jungle."
         />
         {children}
         <Footer />
