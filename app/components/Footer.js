@@ -22,7 +22,13 @@ export default function Footer() {
     }
     return (
       <li key={social.id}>
-        <a href={social.url} className={styles.navFooterLinks}>
+        <a
+          href={social.url}
+          target="_blank"
+          aria-label={social.name}
+          rel="noopener noreferrer"
+          className={styles.navFooterLinks}
+        >
           <FontAwesomeIcon icon={icon} className={styles.brands} />
           {social.name}
         </a>
@@ -33,11 +39,23 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <h2>Retrouvez-moi sur les réseaux !</h2>
-      <nav>
-        <ul className={`${styles.lists} ${styles.socialsNav}`}>
-          {listSocials}
-        </ul>
-      </nav>
+      <div className={styles.contentFooter}>
+        <nav>
+          <ul className={`${styles.lists} ${styles.socialsNav}`}>
+            {listSocials}
+          </ul>
+        </nav>
+        <hr />
+        <p>
+          ©{" "}
+          <span style={{ color: "var(--greenish" }}>
+            {new Date().getFullYear()}
+          </span>{" "}
+          - valverine
+        </p>
+        <hr />
+        <p>Arrière-plan généré par une IA</p>
+      </div>
     </footer>
   );
 }
