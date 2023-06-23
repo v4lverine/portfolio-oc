@@ -8,10 +8,10 @@ export default function Contact() {
     <main>
       <section className={styles.entireContactBlock}>
         <div className={styles.contactTextBlock}>
-          <Presentation label="Des questions ? Des remarques ? Des compliments à me faire ?">
+          <Presentation label="Discutons ensemble de vos projets !">
             Si vous avez besoin de plus d'informations sur mes différents
-            services, <br />
-            vous pouvez me contacter via le formulaire ci-contre. <br />
+            services, vous pouvez me contacter via le formulaire ci-contre.{" "}
+            <br />
             Bien évidemment, je vous répondrai dans les plus brefs délais !
           </Presentation>
           <Link href="/" className={styles.contactToHomeLink}>

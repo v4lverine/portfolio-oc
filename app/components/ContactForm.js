@@ -96,7 +96,7 @@ export default function ContactForm() {
           required
           onChange={(e) => {
             setMessage(e.target.value);
-          }} //for changing inside form to capture input changes
+          }} //for changes inside form to capture input changes
         ></textarea>
         <Button
           className={raleway.className}

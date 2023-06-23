@@ -18,8 +18,8 @@ export default function Home() {
             />
             <p>
               Bonjour je m'appelle Valentine aka{" "}
-              <span className={styles.underline}>valverine</span>, développeuse
-              web front-end / SEO.
+              <span className={styles.underline}>valverine</span>, web developer
+              en front-end / SEO.
             </p>
           </div>
         </Presentation>

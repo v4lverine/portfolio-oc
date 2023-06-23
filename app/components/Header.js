@@ -21,7 +21,7 @@ export default function Header() {
         <Link href="/">
           <Image src="/images/icon.jpg" alt="Logo du site de valverine" />
         </Link>
-        <h1 className={styles.h1}>valverine - Développeuse web</h1>
+        <h1 className={styles.h1}>valverine - web developer</h1>
       </BlockTitle>
       <nav>
         <NavigateHeader />
