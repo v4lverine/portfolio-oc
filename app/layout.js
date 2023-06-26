@@ -3,12 +3,19 @@
 import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { Raleway } from "next/font/google";
+import { Raleway, Delius_Unicase } from "next/font/google";
 import "./globals.scss";
 import Background from "./components/Background";
 
 const raleway = Raleway({
   subsets: ["latin"],
+  weight: "400",
+});
+
+const delius = Delius_Unicase({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-delius",
 });
 
 export const metadata = {
@@ -42,7 +49,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={raleway.className}>
-      <body>
+      <body className={delius.variable}>
         <Header />
         <Background
           src="/images/aibg.png"

@@ -4,8 +4,6 @@
   --beigish: rgb(245, 245, 220);
 }
 
-@import url("https://fonts.googleapis.com/css?family=Delius+Unicase");
-
 html,
 body {
   margin: 0;
@@ -21,7 +19,7 @@ body {
   font-size: 2em;
   text-transform: uppercase;
   width: fit-content;
-  font-family: "Delius Unicase", serif;
+  font-family: var(--font-delius), serif; //variable declared in layout const
   background: rgba(245, 245, 220, 0.8);
   padding: 10px;
   border-radius: 220px 120px 220px 120px;
