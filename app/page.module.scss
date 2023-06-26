@@ -2,6 +2,14 @@
 .secPres {
   background-color: var(--beigish);
   padding: 1px 0 35px 0;
+  h2 {
+    margin-bottom: 0;
+  }
+  @media (max-width: 767px) {
+    width: 1300px;
+    display: grid;
+    justify-content: center;
+  }
 }
 .presBlock {
   display: flex;
@@ -37,6 +45,10 @@
       --_p: 75%;
       filter: grayscale(0%);
     }
+  }
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .underline {

@@ -6,7 +6,6 @@ const backgroundImage = (props) => (
     height={800}
     width={1600}
     quality={80}
-    // fill
     alt={props.alt}
     // placeholder='blur'
     // blurDataURL='' lorsque l'image aura un domaine (?), ajouter via next.config.js

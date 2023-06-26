@@ -4,7 +4,6 @@ import styled from "styled-components";
 import Image from "./ShortImage";
 import NavigateHeader from "./NavigateHeader";
 import Link from "next/link";
-// import React, {useState, useEffect} from 'react'
 
 const BlockTitle = styled.div`
   display: flex;
@@ -23,9 +22,7 @@ export default function Header() {
         </Link>
         <h1 className={styles.h1}>valverine - web developer</h1>
       </BlockTitle>
-      <nav>
-        <NavigateHeader />
-      </nav>
+      <NavigateHeader />
     </header>
   );
 }

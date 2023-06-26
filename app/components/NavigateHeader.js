@@ -1,6 +1,15 @@
+import { useState } from "react";
 import styles from "./components.module.scss";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function NavigateHeader() {
+  // const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  // const toggleHamburger = () => {
+  //   setHamburgerOpen(!hamburgerOpen);
+  // };
+
   const navHeader = [
     {
       name: "présentation",
@@ -26,6 +35,12 @@ export default function NavigateHeader() {
   ));
 
   return (
-    <ul className={`${styles.lists} ${styles.listHeader}`}>{linksHeader}</ul>
+    <nav className={styles.showNav}>
+      <ul className={`${styles.lists} ${styles.listHeader}`}>{linksHeader}</ul>
+
+      {/* <button className={styles.hamburger} onClick={toggleHamburger}>
+        <FontAwesomeIcon icon={faBars} />
+      </button> */}
+    </nav>
   );
 }
