@@ -17,7 +17,7 @@ export default function Home() {
               alt="Photo de profil de valverine"
             />
             <p>
-              Bonjour je m'appelle Valentine aka{" "}
+              Bonjour je m&apos;appelle Valentine aka{" "}
               <span className={styles.underline}>valverine</span>, web developer
               en front-end / SEO.
             </p>
@@ -33,7 +33,7 @@ export default function Home() {
             <p>
               Vous souhaitez me contacter ? Me poser des questions sur un point
               en particulier ? Ou me complimenter pour mes travaux ? <br />
-              Vous pouvez m'écrire en cliquant juste
+              Vous pouvez m&apos;écrire en cliquant juste
               <Link
                 href="/contact"
                 className={`${styles.links} ${styles.underline}`}

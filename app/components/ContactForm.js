@@ -40,17 +40,21 @@ export default function ContactForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    }).then((res) => {
-      console.log("Réponse reçue ! 👻");
-      if (res.status === 200) {
-        alert("Votre message a bien été envoyé ! Merci ! 👍");
-        console.log("Réponse réussie ! ✅");
-        setSubmit("true");
-        setMessage("");
-        setEmail("");
-        setName("");
-      }
-    });
+    })
+      .then((res) => {
+        console.log("Réponse reçue ! 👻");
+        if (res.status === 200) {
+          alert("Votre message a bien été envoyé ! Merci ! 👍");
+          console.log("Réponse réussie ! ✅");
+          setSubmit("true");
+          setMessage("");
+          setEmail("");
+          setName("");
+        }
+      })
+      .catch((error) => {
+        console.log("Une erreur est survenue ❌");
+      });
   };
   return (
     <section className={styles.sectionForm}>

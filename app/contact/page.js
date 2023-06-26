@@ -9,13 +9,13 @@ export default function Contact() {
       <section className={styles.entireContactBlock}>
         <div className={styles.contactTextBlock}>
           <Presentation label="Discutons ensemble de vos projets !">
-            Si vous avez besoin de plus d'informations sur mes différents
+            Si vous avez besoin de plus d&apos;informations sur mes différents
             services, vous pouvez me contacter via le formulaire ci-contre.{" "}
             <br />
             Bien évidemment, je vous répondrai dans les plus brefs délais !
           </Presentation>
           <Link href="/" className={styles.contactToHomeLink}>
-            Retour sur la page d'accueil
+            Retour sur la page d&apos;accueil
           </Link>
         </div>
         <ContactForm />
