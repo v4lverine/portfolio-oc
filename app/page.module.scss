@@ -5,8 +5,8 @@
   h2 {
     margin-bottom: 0;
   }
-  @media (max-width: 767px) {
-    width: min-content;
+  @media (max-width: 768px) {
+    width: 106%;
     display: grid;
     justify-content: center;
     margin: 0;
@@ -50,7 +50,6 @@
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
-    // width: 500px;
     p {
       width: 300px;
       margin-right: 0;
@@ -87,8 +86,7 @@
 .contactBlock {
   color: var(--beigish);
   font-size: 2em;
-  margin-inline: 350px;
-  margin-bottom: 50px;
+  margin: 50px 350px;
   width: 650px;
   line-height: 60px;
   padding: 50px;
@@ -96,8 +94,11 @@
   box-shadow: black 2px 2px 2px;
   border-radius: 25px;
   @media (max-width: 768px) {
-    width: 50%;
+    width: 470px;
     margin-inline: 5%;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding: 20px;
   }
 }
 
@@ -111,6 +112,11 @@
   margin-block: 90px;
   @media (max-width: 768px) {
     width: 500px;
+    height: 300px;
+    flex-direction: column;
+    margin-left: 5%;
+    font-size: 0.9em;
+    margin-block: 5%;
   }
 }
 .contactTextBlock {
@@ -128,6 +134,9 @@
     color: var(--greyish);
     background: rgba(245, 245, 220, 0.622);
     border-radius: 220px 120px 220px 120px;
+  }
+  @media (max-width: 768px) {
+    padding: 15px;
   }
 }
 .contactToHomeLink {
@@ -152,5 +161,9 @@
     background-size: 95% 88%;
     color: var(--greyish);
     text-shadow: 1px 1px 0px rgba(245, 245, 220, 0.622);
+  }
+  @media (max-width: 768px) {
+    text-align: center;
+    background-size: 100%;
   }
 }
