@@ -15,12 +15,21 @@ export default function Works() {
       <div className={styles.carousel}>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={75}
-          slidesPerView={1}
           navigation={true}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           style={{ height: "450px", width: "750px" }}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 20 },
+            480: { slidesPerView: 1, spaceBetween: 30 },
+            768: { slidesPerView: 1, spaceBetween: 50 },
+            1024: {
+              // width: 750,
+              // height: 450,
+              slidesPerView: 1,
+              spaceBetween: 75,
+            },
+          }}
         >
           {works.map((work) => (
             <SwiperSlide key={work.id} className={styles.swipe}>
