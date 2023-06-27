@@ -3,15 +3,25 @@
   --greyish: rgb(108, 103, 110);
   --beigish: rgb(245, 245, 220);
 }
+// $breakpoints: (
+//   phone: 640px,
+//   tablet: 768px,
+//   desktop: 1024px,
+// ); //for responsive
 
 html,
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh; /*to stick footer to bottom*/
-  display: flex;
-  flex-direction: column;
+  // width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  // flex-direction: column;
   scroll-padding-top: 170px; /*for automatic scrolling anchor*/
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 * h2 {
   margin-left: 150px;
@@ -25,4 +35,7 @@ body {
   border-radius: 220px 120px 220px 120px;
   overflow-wrap: break-word;
   width: fit-content;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 }

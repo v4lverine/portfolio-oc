@@ -6,9 +6,10 @@
     margin-bottom: 0;
   }
   @media (max-width: 767px) {
-    width: 1300px;
+    width: min-content;
     display: grid;
     justify-content: center;
+    margin: 0;
   }
 }
 .presBlock {
@@ -49,6 +50,14 @@
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column-reverse;
+    // width: 500px;
+    p {
+      width: 300px;
+      margin-right: 0;
+      font-size: 2em;
+      text-align: center;
+      --_p: 75%;
+    }
   }
 }
 .underline {
@@ -86,6 +95,10 @@
   background-color: var(--greenish);
   box-shadow: black 2px 2px 2px;
   border-radius: 25px;
+  @media (max-width: 768px) {
+    width: 50%;
+    margin-inline: 5%;
+  }
 }
 
 //contact page
@@ -96,6 +109,9 @@
   height: 500px;
   margin-left: 17%;
   margin-block: 90px;
+  @media (max-width: 768px) {
+    width: 500px;
+  }
 }
 .contactTextBlock {
   display: flex;
