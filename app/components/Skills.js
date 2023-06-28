@@ -1,5 +1,3 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import { faStar } from '@fortawesome/free-regular-svg-icons'
 import skills from "../datas/skills.json";
 import styles from "./components.module.scss";
 import Stars from "./Stars";

@@ -1,4 +1,3 @@
-//en cours de fabrication
 "use client";
 import { useState } from "react";
 import styled from "styled-components";
@@ -12,7 +11,7 @@ const Button = styled.button`
   border: 2px solid var(--greenish);
   font-size: 1em;
   cursor: pointer;
-  width: 40%;
+  width: 50%;
   padding-block: 10px;
   margin-inline: 25%;
   font-size: 0.8em;
@@ -26,6 +25,10 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submit, setSubmit] = useState("false");
+
+  const validate = () => {
+    return name.length & email.length & message.length;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault(); //prevent page refreshing
@@ -118,6 +121,7 @@ export default function ContactForm() {
           onClick={(e) => {
             handleSubmit(e);
           }}
+          disabled={!validate()}
         >
           Envoyer
         </Button>
