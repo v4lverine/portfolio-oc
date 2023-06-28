@@ -4,6 +4,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import styles from "./components.module.scss";
 import { Raleway } from "next/font/google";
+import { motion } from "framer-motion";
 
 const Button = styled.button`
   // background: transparent;
@@ -58,7 +59,17 @@ export default function ContactForm() {
   };
   return (
     <section className={styles.sectionForm}>
-      <form className={styles.contactForm} action="#">
+      <motion.form
+        initial={{ opacity: 0, x: 200 }}
+        animate={{ x: 0 }}
+        transition={{
+          duration: 0.5,
+          type: "keyframes",
+        }}
+        whileInView={{ opacity: 1 }}
+        className={styles.contactForm}
+        action="#"
+      >
         <label htmlFor="name" style={{ visibility: "hidden" }}>
           Prénom/Nom
         </label>
@@ -110,7 +121,7 @@ export default function ContactForm() {
         >
           Envoyer
         </Button>
-      </form>
+      </motion.form>
     </section>
   );
 }
