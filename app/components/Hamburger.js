@@ -10,6 +10,7 @@ export default function Hamburger() {
   return (
     <div className={styles.hamburger}>
       <Menu
+        onStateChange={setIsOpen}
         customBurgerIcon={
           <div className={styles.bars}>
             <FontAwesomeIcon icon={faBars} color="var(--greenish)" />
@@ -17,11 +18,11 @@ export default function Hamburger() {
         }
         width={"600px"}
         className={styles.hamburgerPosition}
-        onOpen={isOpen}
-        onClose={isOpen} // /!\
       >
-        <Link href="/">Page d'accueil</Link>
-        <Link href="/contact">Contact</Link>
+        <div style={{ display: "grid" }}>
+          <Link href="/">Page d'accueil</Link>
+          <Link href="/contact">Contact</Link>
+        </div>
       </Menu>
     </div>
   );
