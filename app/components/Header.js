@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Image from "./ShortImage";
 import NavigateHeader from "./NavigateHeader";
 import Link from "next/link";
+import Hamburger from "./Hamburger";
 
 const BlockTitle = styled.div`
   display: flex;
@@ -11,6 +12,9 @@ const BlockTitle = styled.div`
   align-items: center;
   width: 100%;
   margin-left: 50px;
+  @media (max-width: 768px) {
+    margin-left: 0;
+  }
 `;
 
 export default function Header() {
@@ -23,6 +27,7 @@ export default function Header() {
         <h1 className={styles.h1}>valverine - web developer</h1>
       </BlockTitle>
       <NavigateHeader />
+      <Hamburger />
     </header>
   );
 }
