@@ -7,8 +7,13 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Works() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <section className={styles.workBlock} id="works">
       <h2>Mes différents travaux</h2>
@@ -24,8 +29,6 @@ export default function Works() {
             480: { slidesPerView: 1, spaceBetween: 30 },
             768: { slidesPerView: 1, spaceBetween: 50 },
             1024: {
-              // width: 750,
-              // height: 450,
               slidesPerView: 1,
               spaceBetween: 75,
             },
@@ -50,6 +53,7 @@ export default function Works() {
           ))}
         </Swiper>
       </div>
+      <div className={styles.worksSecResp}></div>
     </section>
   );
 }
