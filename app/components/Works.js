@@ -51,7 +51,7 @@ export default function Works() {
       </div>
       <div className={styles.worksSecResp}>
         {works.map((work) => (
-          <Collapse label={work.title}>
+          <Collapse label={work.title} key={work.id}>
             <p>{work.description}</p> <a href={work.url}>{work.captionUrl}</a>{" "}
             <img src={work.image} />
           </Collapse>

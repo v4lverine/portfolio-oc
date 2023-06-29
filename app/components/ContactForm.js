@@ -27,7 +27,7 @@ export default function ContactForm() {
   const [submit, setSubmit] = useState("false");
 
   const validate = () => {
-    return name.length & email.length & message.length;
+    return name.length && email.length && message.length >= 100;
   };
 
   const handleSubmit = (e) => {
@@ -106,8 +106,6 @@ export default function ContactForm() {
         </label>
         <textarea
           name="message"
-          minLength={100}
-          maxLength={2000}
           id="message"
           value={message}
           placeholder="Message (100 caractères minimum)"

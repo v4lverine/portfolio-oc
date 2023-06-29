@@ -21,6 +21,7 @@ body {
   scroll-padding-top: 170px; /*for automatic scrolling anchor*/
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    // grid-template-rows: 40px 20em 40px;
   }
 }
 * h2 {
