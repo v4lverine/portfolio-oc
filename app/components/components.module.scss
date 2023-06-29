@@ -142,6 +142,13 @@
     font-size: 1.3em;
   }
 }
+.worksSecResp {
+  display: none;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*stars*/
 .leafBlock {

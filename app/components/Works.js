@@ -7,13 +7,9 @@ import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
-import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import Collapse from "./Collapse";
 
 export default function Works() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <section className={styles.workBlock} id="works">
       <h2>Mes différents travaux</h2>
@@ -53,7 +49,14 @@ export default function Works() {
           ))}
         </Swiper>
       </div>
-      <div className={styles.worksSecResp}></div>
+      <div className={styles.worksSecResp}>
+        {works.map((work) => (
+          <Collapse label={work.title}>
+            <p>{work.description}</p> <a href={work.url}>{work.captionUrl}</a>{" "}
+            <img src={work.image} />
+          </Collapse>
+        ))}
+      </div>
     </section>
   );
 }
