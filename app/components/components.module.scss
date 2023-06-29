@@ -109,7 +109,7 @@
   background-color: var(--beigish);
   padding-block: 50px;
   @media (max-width: 768px) {
-    width: 105%;
+    width: 106%;
   }
 }
 .carousel {
@@ -142,12 +142,41 @@
     font-size: 1.3em;
   }
 }
+//collapse responsive
 .worksSecResp {
   display: none;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
+}
+.toggle {
+  margin-bottom: 30px;
+}
+.toggleButton {
+  border-radius: 25px;
+  border: 2px solid var(--greyish);
+  // background-color: var(--greyish);
+  // color: var(--beigish);
+}
+.toggleTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 400px;
+  font-size: 2em;
+  padding: 15px;
+  border: none;
+}
+.toggleContent {
+  // margin-top: -20px; //voir pour gérer ça autrement.
+  width: 415px;
+  padding: 15px;
+  font-size: 1.5em;
+  background-color: var(--greenish);
+  color: var(--beigish);
 }
 
 /*stars*/

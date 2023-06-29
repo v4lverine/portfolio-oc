@@ -44,7 +44,7 @@ export default function Works() {
         {works.map((work) => (
           <Collapse label={work.title} key={work.id}>
             <p>{work.description}</p> <a href={work.url}>{work.captionUrl}</a>{" "}
-            <img src={work.image} />
+            <img src={work.image} style={{ width: "50px", height: "50px" }} />
           </Collapse>
         ))}
       </div>
