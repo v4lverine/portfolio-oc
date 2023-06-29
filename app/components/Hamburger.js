@@ -2,27 +2,42 @@ import { slide as Menu } from "react-burger-menu";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./components.module.scss";
-import Link from "next/link";
+import "./burger.scss";
 import { useState } from "react";
+// import { motion } from "framer-motion";
 
 export default function Hamburger() {
+  const styleLinks = {
+    textDecoration: "none",
+    color: "var(--beigish)",
+    marginBottom: "50px",
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={styles.hamburger}>
       <Menu
+        right
         onStateChange={setIsOpen}
         customBurgerIcon={
-          <div className={styles.bars}>
+          <span className={styles.bars}>
             <FontAwesomeIcon icon={faBars} color="var(--greenish)" />
-          </div>
+          </span>
         }
-        width={"600px"}
-        className={styles.hamburgerPosition}
+        width={"400px"}
       >
-        <div style={{ display: "grid" }}>
-          <Link href="/">Page d'accueil</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
+        <nav
+          style={{
+            display: "grid",
+          }}
+        >
+          <a href="/" style={styleLinks}>
+            Page d'accueil
+          </a>
+          <a href="/contact" style={styleLinks}>
+            Contact
+          </a>
+        </nav>
       </Menu>
     </div>
   );
