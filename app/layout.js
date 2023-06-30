@@ -1,5 +1,3 @@
-//code global = à mettre dans un app.js ou laisser tel quel ?
-
 import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -22,7 +20,7 @@ export const metadata = {
   //métadonnées du site, pour SEO
   title: "valverine - web developer",
   description:
-    "Le portfolio de valverine aka Valentine B. Web developer full-stack / ancienne journaliste. Besoin de mes services ? Contactez-moi !",
+    "Le portfolio de valverine aka Valentine, web developer full-stack / ancienne journaliste. Besoin de mes services ? Contactez-moi !",
   category: "technology",
   twitter: {
     card: "summary_large_image",
