@@ -32,7 +32,6 @@ export default function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault(); //prevent page refreshing
-    console.log("Envoyer");
     let data = {
       name,
       email,
@@ -46,10 +45,8 @@ export default function ContactForm() {
       body: JSON.stringify(data),
     })
       .then((res) => {
-        console.log("Réponse reçue ! 👻");
         if (res.status === 200) {
           alert("Votre message a bien été envoyé ! Merci ! 👍");
-          console.log("Réponse réussie ! ✅");
           setSubmit("true");
           setMessage("");
           setEmail("");
