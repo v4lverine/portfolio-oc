@@ -1,0 +1,77 @@
+[
+    {
+        "id": "s1",
+        "title": "HTML",
+        "rate": "5"
+    },    
+    {
+        "id": "s2",
+        "title": "CSS",
+        "rate": "5"
+    },    
+    {
+        "id": "s3",
+        "title": "React",
+        "rate": "4"
+    },    
+    {
+        "id":"s4",
+        "title": "JavaScript",
+        "rate": "4"
+    },    
+    {
+        "id":"s5",
+        "title":"Framework Express",
+        "rate": "3"
+    },   
+    {
+        "id": "s6",
+        "title": "NodeJS",
+        "rate": "2.5"
+    },
+    {
+        "id": "s7",
+        "title": "Back-end",
+        "rate": "3"
+    },    
+    {
+        "id": "s8",
+        "title": "Front-end",
+        "rate": "4"
+    },    
+    {
+        "id": "s9",
+        "title": "Gestion de projet",
+        "rate": "3"
+    },    
+    {
+        "id":"s10",
+        "title": "Mise en pratique : méthode agile SCRUM",
+        "rate": "3"
+    },    
+    {
+        "id":"s11",
+        "title":"Optimisation de l'accessibilité d'un site",
+        "rate": "4"
+    },   
+    {
+        "id": "s12",
+        "title": "Référencement naturel (SEO)",
+        "rate": "4"
+    },
+    {
+        "id":"s13",
+        "title":"Référencement local (Schema.org)",
+        "rate": "4"
+    },   
+    {
+        "id": "s14",
+        "title": "NextJS",
+        "rate": "2.5"
+    },
+    {
+        "id": "s15",
+        "title": "Développement d'API",
+        "rate": "3.5"
+    }   
+]

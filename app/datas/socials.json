@@ -1,0 +1,20 @@
+[ 
+        {
+            "id": "1",
+            "name": "Twitter",
+            "url":"https://twitter.com/valverine_",
+            "icon": "fa-twitter"
+        },
+        {
+            "id": "2",
+            "name": "LinkedIn",
+            "url": "https://linkedin.com/in/valentine-b-328876151/",
+            "icon": "fa-linkedin"
+        },
+        {
+            "id": "3",
+            "name": "Twitch",
+            "url": "https://twitch.tv/v4lverine",
+            "icon": "fa-twitch"
+        }
+]

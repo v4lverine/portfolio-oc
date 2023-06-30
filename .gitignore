@@ -27,15 +27,15 @@ yarn-error.log*
 # local env files
 .env*.local
 .env
-socials.json
-works.json
-skills.json
+# socials.json
+# works.json
+# skills.json
 
 # vercel
 .vercel
 
 # # local images directory
-/public/images
+# /public/images
 
 # typescript
 *.tsbuildinfo

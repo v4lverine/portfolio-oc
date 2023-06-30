@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "Kasa, l'application en React",
+    "description": "Création d'une application SPA en React avec composants et système de routes via React Router",
+    "url": "https://github.com/v4lverine/kasa-app-VB",
+    "image": "/images/kasa.png",
+    "captionUrl": "Le code de Kasa sur GitHub",
+    "alt": "Capture d'écran du résultat du code de Kasa"
+  },
+  {
+    "id": "2",
+    "title": "Mon Vieux Grimoire pour assimiler le back-end",
+    "description": "Mise en place d'une API avec le framework Express avec différents middlewares, en complèment de NodeJS. Stockage des données avec MongoDB",
+    "url": "https://github.com/v4lverine/backend-grimoire-OC-7",
+    "image": "/images/codebackend.png",
+    "captionUrl": "Retrouvez mon code du Vieux Grimoire sur GitHub",
+    "alt": "Capture d'écran du résultat du code back-end du Vieux Grimoire"
+  },
+  {
+    "id": "3",
+    "title": "Booki, du bon usage de HTML et CSS",
+    "description": "Initialisation d'un site statique en HTML et CSS avec responsive mobile et tablette",
+    "url": "https://github.com/v4lverine/Projet_Booki_VB",
+    "image": "/images/htmlcss.png",
+    "captionUrl": "Plus d'infos de Booki sur GitHub",
+    "alt": "Capture d'écran du résultat du code de Booki"
+  },
+  {
+    "id": "4",
+    "title": "L'optimisation du site de Nina Carducci",
+    "description": "Mise en place des règles d'accessibilité et de SEO pour optimiser le site d'une photographe locale (Schema.org, Wave Evaluation Tool, mise en place des balises sémantiques)",
+    "url": "https://github.com/v4lverine/projet5_OC_debug",
+    "image": "/images/optimisation.png",
+    "captionUrl": "Mes skills d'optimisation à retrouver sur GitHub",
+    "alt": "Capture d'écran du site de Nina Carducci"
+  },
+  {
+    "id": "5",
+    "title": "Appréhension et compréhension de JavaScript",
+    "description": "Développement du front-end en JavaScript du site d'une architecte d'intérieur. Appels fetch auprès d'une API pour récupérer des données stockées en BDD",
+    "url": "https://github.com/v4lverine/projet_javascript_sophie_bluel",
+    "image": "/images/javascript.png",
+    "captionUrl": "Présentation du code en JavaScript sur GitHub",
+    "alt": "Capture d'écran du résultat du site de Sophie Bluel"
+  }
+]
