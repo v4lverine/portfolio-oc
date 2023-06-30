@@ -4,14 +4,14 @@ import LargeImage from "./components/LargeImage";
 import Presentation from "./components/Presentation";
 import Skills from "./components/Skills";
 import Works from "./components/Works";
-
-// import Hobbies from './components/Hobbies'
+import Fallingleaf from "./components/Fallingleaf";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <section className={styles.secPres}>
         <Presentation label="Qui suis-je ?">
+          <Fallingleaf />
           <div className={styles.presBlock} id="presentation">
             <LargeImage
               src="/images/profile.jpg"
@@ -27,7 +27,6 @@ export default function Home() {
       </section>
       <Skills />
       <Works />
-      {/* <Hobbies /> */}
       <section className={styles.wholeContactBlock}>
         <Presentation label="Comment me contacter ?">
           <div className={styles.contactBlock}>
