@@ -1,24 +1,22 @@
 import Image from "next/image";
 
-const largePictures = (props) => (
+const WorkImages = (props) => (
   <Image
     src={props.src}
     height={500}
     width={500}
-    quality={50}
+    quality={30}
     alt={props.alt}
     // placeholder='blur'
     // blurDataURL='' lorsque l'image aura un domaine (?), ajouter via next.config.js
     // sizes="(max-width: 768px) 200px, 200px"
     priority
     style={{
-      borderRadius: "300px",
-      border: "solid var(--greenish) 8px",
-      marginRight: "15px",
-      padding: "8px",
-      zIndex: "1",
+      width: "750px",
+      height: "450px",
+      opacity: "0.2",
     }}
   />
 );
 
-export default largePictures;
+export default WorkImages;

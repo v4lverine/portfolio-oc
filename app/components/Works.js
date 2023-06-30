@@ -10,6 +10,7 @@ import "swiper/scss/scrollbar";
 import Collapse from "./Collapse";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import WorkImages from "./ImageWorks";
 
 export default function Works() {
   return (
@@ -25,15 +26,7 @@ export default function Works() {
         >
           {works.map((work) => (
             <SwiperSlide key={work.id} className={styles.swipe}>
-              <img
-                src={work.image}
-                style={{
-                  width: "750px",
-                  height: "450px",
-                  opacity: "0.2",
-                }}
-                alt={work.alt}
-              />
+              <WorkImages src={work.image} alt={work.alt} />
               <div style={{ position: "absolute", top: "0" }}>
                 <h3>{work.title}</h3>
                 <p>{work.description}</p>

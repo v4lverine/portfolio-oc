@@ -32,7 +32,7 @@ export default function NotFound() {
             marginLeft: "22%",
           }}
         >
-          Retourner à la page d'accueil
+          Retourner à la page d&apos;accueil
         </Link>
       </ErrorPage>
     </main>

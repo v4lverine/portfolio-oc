@@ -32,7 +32,7 @@ export default function Hamburger() {
           }}
         >
           <a href="/" style={styleLinks}>
-            Page d'accueil
+            Page d&apos;accueil
           </a>
           <a href="/contact" style={styleLinks}>
             Contact
