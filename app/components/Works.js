@@ -30,9 +30,10 @@ export default function Works() {
                   height: "450px",
                   opacity: "0.2",
                 }}
+                alt={work.alt}
               />
               <div style={{ position: "absolute", top: "0" }}>
-                <h4>{work.title}</h4>
+                <h3>{work.title}</h3>
                 <p>{work.description}</p>
                 <a href={work.url}>{work.captionUrl}</a>
               </div>

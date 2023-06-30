@@ -43,8 +43,6 @@ export default function Home() {
                 ici{" "}
               </Link>
               ! <br />
-              Temps de réponse estimé :{" "}
-              {/*mettre un genre de temps de chargement*/} ...
             </p>
           </div>
         </Presentation>

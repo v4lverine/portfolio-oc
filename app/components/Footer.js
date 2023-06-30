@@ -48,7 +48,7 @@ export default function Footer() {
         <hr />
         <p>
           ©{" "}
-          <span style={{ color: "var(--greenish" }}>
+          <span style={{ color: "#365E42", fontWeight: "600" }}>
             {new Date().getFullYear()}
           </span>{" "}
           - valverine
