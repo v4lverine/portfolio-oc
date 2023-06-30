@@ -8,6 +8,8 @@ import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
 import Collapse from "./Collapse";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function Works() {
   return (
@@ -44,8 +46,12 @@ export default function Works() {
       <div className={styles.worksSecResp}>
         {works.map((work) => (
           <Collapse label={work.title} key={work.id}>
-            <p>{work.description}</p> <a href={work.url}>{work.captionUrl}</a>{" "}
-            <img src={work.image} style={{ width: "50px", height: "50px" }} />
+            <p>{work.description}</p>{" "}
+            <a href={work.url}>
+              {work.captionUrl}
+              {"    "}
+              <FontAwesomeIcon icon={faGithub} style={{ fontSize: "1.5em" }} />
+            </a>
           </Collapse>
         ))}
       </div>

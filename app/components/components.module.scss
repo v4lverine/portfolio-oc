@@ -177,6 +177,16 @@
   font-size: 1.5em;
   background-color: var(--greenish);
   color: var(--beigish);
+  border-radius: 25px;
+  & a {
+    color: rgb(242, 233, 108);
+    text-align: center;
+    font-size: 0.8em;
+    display: block;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+  }
 }
 
 /*stars*/
