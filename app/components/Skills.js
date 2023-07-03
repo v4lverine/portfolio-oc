@@ -15,7 +15,7 @@ export default function Skills() {
       <h2 id="skills">Mes différentes compétences</h2>
       <p className={styles.skillsText}>
         Au cours de ma formation <b className={styles.keyword}>Web Developer</b>{" "}
-        chez
+        au sein d&apos;
         <a
           href="https://openclassrooms.com"
           target="_blank"
@@ -23,11 +23,11 @@ export default function Skills() {
         >
           OpenClassrooms
         </a>
-        , j'ai pu développer un grand nombre de compétences dans le domaine du
-        développement web. <br />
-        D'une note allant de 1 (en cours d'apprentissage) à 5 (compétence bien
-        acquise), j'ai auto-évalué ces divers atouts dans cette liste
-        ci-dessous.
+        , j&apos;ai pu développer un grand nombre de compétences dans le domaine
+        du développement web. <br />
+        D&apos;une note allant de 1 (en cours d&apos;apprentissage) à 5
+        (compétence bien acquise), j&apos;ai auto-évalué ces divers atouts dans
+        cette liste ci-dessous.
       </p>
       <ul className={styles.listSkills}>{listSkills}</ul>
     </article>
