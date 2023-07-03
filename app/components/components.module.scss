@@ -54,12 +54,15 @@
 
 /*component skills*/
 // .skillsBlock {
-
+//   display: flex;
+//   flex-direction: column;
 // }
 .listSkills {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   justify-content: center;
+  margin: 2%;
   @media (max-width: 767px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -92,8 +95,9 @@
     border: var(--beigish) solid 3px;
   }
   @media (max-width: 767px) {
-    width: 450px;
-    margin: 15px 0;
+    width: auto;
+    margin-block: 15px;
+    margin-right: 5%;
     font-size: 1.5em;
     h3 {
       margin-bottom: 10px;
