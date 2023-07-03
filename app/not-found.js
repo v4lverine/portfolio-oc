@@ -7,12 +7,19 @@ const ErrorPage = styled.section`
   margin: 5% 20%;
   padding: 5%;
   border-radius: 25px;
-  width: 800px;
   height: 300px;
   h2 {
     margin: 0;
     text-align: center;
     font-size: 4em;
+  }
+  @media (max-width: 767px) {
+    font-size: 0.7em;
+    margin: 10% 2%;
+    height: 400px;
+  }
+  @media (max-width: 1023px) {
+    font-size: 0.8em;
   }
 `;
 //404 homepage
@@ -29,7 +36,7 @@ export default function NotFound() {
             fontSize: "2em",
             color: "var(--greyish)",
             textAlign: "center",
-            marginLeft: "22%",
+            marginLeft: "15%",
           }}
         >
           Retourner à la page d&apos;accueil
