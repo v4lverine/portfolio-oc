@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "Kasa, l'application en React",
-    "description": "Création d'une application SPA en React avec composants et système de routes via React Router",
+    "description": "Création d'une SPA en React avec composants et système de routes via React Router",
     "url": "https://github.com/v4lverine/kasa-app-VB",
     "image": "/images/kasa.png",
     "captionUrl": "Le code de Kasa sur GitHub",

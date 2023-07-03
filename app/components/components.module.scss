@@ -53,10 +53,33 @@
 }
 
 /*component skills*/
-// .skillsBlock {
-//   display: flex;
-//   flex-direction: column;
-// }
+.skillsText {
+  background: rgba(61, 61, 61, 0.9);
+  width: auto;
+  color: var(--beigish);
+  margin-inline: 20%;
+  font-size: 1.5em;
+  padding: 2%;
+  line-height: 50px;
+  border: #575757 solid 3px;
+  @media (max-width: 767px), (max-width: 1023px) {
+    font-size: 1em;
+    line-height: 30px;
+  }
+}
+.linkSkillsText {
+  text-decoration: none;
+  color: var(--beigish);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: var(--greenish);
+    font-weight: 600;
+  }
+}
+.keyword {
+  font-weight: lighter;
+  color: #fff;
+}
 .listSkills {
   display: flex;
   flex-flow: row wrap;
