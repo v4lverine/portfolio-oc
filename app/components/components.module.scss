@@ -146,6 +146,23 @@
     font-size: 1.3em;
   }
 }
+.linksSwiper {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--greenish);
+  font-weight: 600;
+  font-style: italic;
+  box-shadow: inset 0 0 0 0 var(--greenish);
+  color: var(--greyish);
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  &:hover {
+    box-shadow: inset 700px 0 0 0 var(--greenish);
+    color: var(--beigish);
+  }
+}
+
 //collapse responsive
 .worksSecResp {
   display: none;

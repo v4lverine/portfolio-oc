@@ -30,7 +30,9 @@ export default function Works() {
               <div style={{ position: "absolute", top: "0" }}>
                 <h3>{work.title}</h3>
                 <p>{work.description}</p>
-                <a href={work.url}>{work.captionUrl}</a>
+                <a href={work.url} className={styles.linksSwiper}>
+                  {work.captionUrl}
+                </a>
               </div>
             </SwiperSlide>
           ))}
