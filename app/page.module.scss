@@ -102,18 +102,17 @@
 //contact page
 .entireContactBlock {
   display: flex;
+  justify-content: center;
   align-items: center;
-  // width: 1000px;
-  height: 500px;
-  margin-left: 17%;
+  height: auto;
   margin-block: 90px;
   @media (max-width: 767px) {
     // width: 500px;
-    height: 850px;
+    // height: 850px;
     flex-direction: column;
-    margin-left: 5%;
+    // margin-left: 5%;
     font-size: 0.9em;
-    margin-block: 5%;
+    // margin-block: 5%;
   }
   @media (max-width: 1023px) {
     margin-inline: 5%;
@@ -122,9 +121,9 @@
 .contactTextBlock {
   display: flex;
   color: black;
+  width: 320px;
   flex-direction: column;
-  padding-block: 100px;
-  padding-inline: 35px;
+  padding: 50px 35px;
   background-color: #7ade9f;
   & h2 {
     font-size: 1.4em;
@@ -145,7 +144,7 @@
   -webkit-text-stroke: black 0.5px;
   // margin-inline: 5%;
   margin-top: 15px;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-transform: uppercase;
   background-image: linear-gradient(
     120deg,
