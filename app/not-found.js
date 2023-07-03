@@ -35,8 +35,9 @@ export default function NotFound() {
             textDecoration: "none",
             fontSize: "2em",
             color: "var(--greyish)",
-            textAlign: "center",
-            marginLeft: "15%",
+            display: "block",
+            margin: "auto",
+            width: "fit-content",
           }}
         >
           Retourner à la page d&apos;accueil
@@ -45,3 +46,7 @@ export default function NotFound() {
     </main>
   );
 }
+
+// export default function NotFound() {
+//   return <div>NotFound</div>;
+// }
