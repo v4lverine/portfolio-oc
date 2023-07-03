@@ -15,7 +15,7 @@ export default function Skills() {
       <h2 id="skills">Mes différentes compétences</h2>
       <p className={styles.skillsText}>
         Au cours de ma formation <b className={styles.keyword}>Web Developer</b>{" "}
-        au sein d&#39;
+        chez
         <a
           href="https://openclassrooms.com"
           target="_blank"
