@@ -17,7 +17,7 @@ const delius = Delius_Unicase({
 });
 
 export const metadata = {
-  //métadonnées du site, pour SEO
+  //website SEO metadata
   title: "valverine - web developer",
   description:
     "Le portfolio de valverine aka Valentine, web developer full-stack / ancienne journaliste. Besoin de mes services ? Contactez-moi !",
@@ -25,19 +25,19 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "valverine - web developer",
-    // url:'https://valverine.fr',
+    url: "https://portfolio-oc-seven.vercel.app/",
     description:
       "Bienvenue sur le portfolio de valverine. Web developer full-stack",
     creator: "@valverine_",
-    // images: [''],
+    images: ["/images/icon.jpg"],
   },
   openGraph: {
     title: "valverine - web developer",
     description:
       "Bienvenue sur le portfolio de valverine. Web developer full-stack",
-    // url: 'https://valverine.fr',
-    // siteName: 'valverine - web developer',
-    // images:,
+    url: "https://portfolio-oc-seven.vercel.app/",
+    siteName: "valverine - web developer",
+    images: "/images/icon.jpg",
   },
   locale: "fr_FR",
   type: "website",

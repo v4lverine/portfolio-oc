@@ -31,7 +31,6 @@
 }
 .header {
   height: 80px;
-  // width: 100%;
   position: sticky;
   top: 0;
   background-color: #fff;
@@ -43,13 +42,9 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 3px 0px;
   z-index: 2;
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 767px), (max-width: 1023px) {
     & h1 {
       font-size: 1.5em;
-    }
-    .selectList {
-      text-transform: lowercase;
     }
     .listHeader {
       display: none;
@@ -58,12 +53,14 @@
 }
 
 /*component skills*/
+// .skillsBlock {
+
+// }
 .listSkills {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 95%;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -94,7 +91,7 @@
     background-size: 100% 100%, auto;
     border: var(--beigish) solid 3px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: 450px;
     margin: 15px 0;
     font-size: 1.5em;
@@ -108,13 +105,16 @@
 .workBlock {
   background-color: var(--beigish);
   padding-block: 50px;
-  @media (max-width: 768px) {
-    width: 106%;
+  @media (max-width: 767px) {
+    // width: 104%;
+  }
+  @media (max-width: 1023px) {
+    // width: 100%;
   }
 }
 .carousel {
   padding-inline: 100px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px), (max-width: 1023px) {
     padding-inline: 0;
     display: none;
   }
@@ -145,7 +145,7 @@
 //collapse responsive
 .worksSecResp {
   display: none;
-  @media (max-width: 768px) {
+  @media (max-width: 767px), (max-width: 1023px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,8 +157,6 @@
 .toggleButton {
   border-radius: 25px;
   border: 2px solid var(--greyish);
-  // background-color: var(--greyish);
-  // color: var(--beigish);
 }
 .toggleTitle {
   display: flex;
@@ -171,7 +169,6 @@
   border: none;
 }
 .toggleContent {
-  // margin-top: -20px; //voir pour gérer ça autrement.
   width: 415px;
   padding: 15px;
   font-size: 1.5em;
@@ -194,7 +191,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 50%;
   transition: 0.3s;
   &:hover {
     color: var(--beigish);
@@ -217,11 +213,11 @@
     font-size: 1.5em;
     background: none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px), (max-width: 1023px) {
     height: auto;
     padding-inline: 15px;
     padding-bottom: 0;
-    width: 100%;
+    // width: 100%;
     & h2 {
       margin-left: 0;
     }
@@ -234,10 +230,10 @@
     margin: 0 5%;
     height: 40px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px), (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
-    width: auto;
+    // width: auto;
     hr {
       display: none;
     }
@@ -283,7 +279,7 @@
 .socialsNav {
   display: flex;
   margin-left: 100px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px), (max-width: 1023px) {
     margin-left: 0;
     padding: 0;
     font-size: 1.2em;
@@ -294,14 +290,11 @@
 .contactForm {
   display: flex;
   flex-flow: column wrap;
-  width: 400px;
+  // width: 400px;
   padding: 30px 75px;
   font-size: 1.5em;
   height: 500px;
   box-shadow: -16px 2px 17px 2px rgba(0, 0, 0, 0.2);
-  // :focus {
-  //   background: -webkit-linear-gradient(left, var(--greenish), var(--beigish));
-  // }
   background-color: var(--beigish);
   & input,
   textarea {
@@ -314,8 +307,8 @@
   & textarea {
     height: 10em;
   }
-  @media (max-width: 768px) {
-    width: 350px;
+  @media (max-width: 767px) {
+    // width: 350px;
   }
 }
 .sectionForm {
@@ -332,7 +325,7 @@
   .listHeader {
     display: flex;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1023px) {
     display: none;
   }
 }

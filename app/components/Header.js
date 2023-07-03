@@ -12,7 +12,7 @@ const BlockTitle = styled.div`
   align-items: center;
   width: 100%;
   margin-left: 50px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     margin-left: 0;
   }
 `;

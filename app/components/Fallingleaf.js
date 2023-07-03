@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const LeafBlock = styled.div`
   height: 0px;
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     display: none;
   }
 `;
