@@ -25,9 +25,9 @@ export default function Skills() {
         </a>
         , j'ai pu développer un grand nombre de compétences dans le domaine du
         développement web. <br />
-        D'une note allant de 1 &#40;en cours d'apprentissage&#41; à 5
-        &#40;compétence bien acquise&#41;, j'ai auto-évalué ces divers atouts
-        dans cette liste ci-dessous.
+        D'une note allant de 1 (en cours d'apprentissage) à 5 (compétence bien
+        acquise), j'ai auto-évalué ces divers atouts dans cette liste
+        ci-dessous.
       </p>
       <ul className={styles.listSkills}>{listSkills}</ul>
     </article>
