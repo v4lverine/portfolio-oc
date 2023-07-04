@@ -25,19 +25,19 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "valverine - web developer",
-    url: "https://portfolio-oc-seven.vercel.app/",
+    url: "https://valverine-portfolio.vercel.app/",
     description:
       "Bienvenue sur le portfolio de valverine. Web developer full-stack",
     creator: "@valverine_",
-    images: ["/images/icon.jpg"],
+    images: ["https://valverine-portfolio.vercel.app/images/icon.jpg"],
   },
   openGraph: {
     title: "valverine - web developer",
     description:
       "Bienvenue sur le portfolio de valverine. Web developer full-stack",
-    url: "https://portfolio-oc-seven.vercel.app/",
+    url: "https://valverine-portfolio.vercel.app/",
     siteName: "valverine - web developer",
-    images: "/images/icon.jpg",
+    images: "https://valverine-portfolio.vercel.app/images/icon.jpg",
   },
   locale: "fr_FR",
   type: "website",
