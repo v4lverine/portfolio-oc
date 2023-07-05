@@ -22,9 +22,9 @@ export async function POST(req, res) {
     const body = await req.json();
 
     const messageBody = `
-    ${body.name}
-    ${body.email} 
-    ${body.message}`;
+    <h3>Message de : ${body.name}</h3>
+    <a href='mailto:${body.email}'>${body.email}</a> 
+    <p>${body.message}</p>`;
     await transport.sendMail({
       text: messageBody,
       html: messageBody,

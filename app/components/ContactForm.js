@@ -51,9 +51,13 @@ export default function ContactForm() {
           setMessage("");
           setEmail("");
           setName("");
+        } else {
+          console.log(`Le server a retourné un code ${res.status}`);
+          alert("Message envoyé !");
         }
       })
       .catch((error) => {
+        alert("La requête n'a pas pu aboutir");
         console.log("Une erreur est survenue ❌");
       });
   };
