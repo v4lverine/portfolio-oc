@@ -4,6 +4,7 @@ import styled from "styled-components";
 import styles from "./components.module.scss";
 import { Raleway } from "next/font/google";
 import { motion } from "framer-motion";
+import Loader from "./Loader";
 
 const Button = styled.button`
   // background: transparent;
@@ -26,6 +27,9 @@ export default function ContactForm() {
   const [message, setMessage] = useState("");
   const [submit, setSubmit] = useState("false");
 
+  const [isLoading, setIsLoading] = useState(false); //loader state
+  const [errorMessage, setErrorMessage] = useState("");
+
   const validate = () => {
     return name.length && email.length && message.length >= 100;
   };
@@ -37,6 +41,7 @@ export default function ContactForm() {
       email,
       message,
     };
+    setIsLoading(true);
     fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -51,12 +56,15 @@ export default function ContactForm() {
           setMessage("");
           setEmail("");
           setName("");
+          setIsLoading(false);
         } else {
           console.log(`Le server a retourné un code ${res.status}`);
           alert("Message envoyé !");
         }
       })
       .catch((error) => {
+        setErrorMessage("Unable to send message");
+        setIsLoading(false);
         alert("La requête n'a pas pu aboutir");
         console.log("Une erreur est survenue ❌");
       });
@@ -120,9 +128,13 @@ export default function ContactForm() {
           onClick={(e) => {
             handleSubmit(e);
           }}
-          disabled={!validate()}
+          disabled={!validate() || isLoading}
         >
-          Envoyer
+          {isLoading ? (
+            <Loader style={{ color: "var(--greenish)" }} />
+          ) : (
+            "Envoyer"
+          )}
         </Button>
       </motion.form>
     </section>

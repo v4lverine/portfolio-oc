@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.13.7",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
     "framer-motion": "^10.12.17",
@@ -23,7 +26,7 @@
     "react-burger-menu": "^3.0.9",
     "react-dom": "18.2.0",
     "sass": "^1.63.4",
-    "styled-components": "^5.3.3",
+    "styled-components": "^6.0.2",
     "swiper": "^9.4.1"
   },
   "devDependencies": {
