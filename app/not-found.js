@@ -46,7 +46,3 @@ export default function NotFound() {
     </main>
   );
 }
-
-// export default function NotFound() {
-//   return <div>NotFound</div>;
-// }

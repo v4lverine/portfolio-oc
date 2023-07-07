@@ -14,7 +14,10 @@ export default function NavigateHeader() {
       name: "travaux",
       path: "/#works",
     },
-    { name: "contact", path: "/contact" },
+    {
+      name: "contact",
+      path: "/contact",
+    },
   ];
 
   const linksHeader = navHeader.map((link, index) => (

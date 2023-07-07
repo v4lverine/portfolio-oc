@@ -43,7 +43,7 @@ export const metadata = {
   type: "website",
 };
 
-//structure de la page, children = charge page selon la route, page de app = '/'
+//page structure, children = according to route, homepage = '/'
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={raleway.className}>

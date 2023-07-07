@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./components.module.scss";
 import "./burger.scss";
 import { useState } from "react";
-// import { motion } from "framer-motion";
 
 export default function Hamburger() {
   const styleLinks = {

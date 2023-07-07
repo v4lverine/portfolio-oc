@@ -16,7 +16,6 @@ export default function Collapse(props) {
   return (
     <div className={styles.toggle}>
       <button
-        href="#"
         onClick={(event) => {
           event.preventDefault();
           setIsOpen(!isOpen);
@@ -24,8 +23,8 @@ export default function Collapse(props) {
         className={styles.toggleButton}
         style={
           isOpen
-            ? { backgroundColor: "var(--beigish)", color: "var(--greyish" }
-            : { backgroundColor: "var(--greyish)", color: "var(--beigish" }
+            ? { backgroundColor: "var(--beigish)", color: "var(--greyish)" }
+            : { backgroundColor: "var(--greyish)", color: "var(--beigish)" }
         }
       >
         <div className={`${styles.toggleTitle} ${raleway.className}`}>
