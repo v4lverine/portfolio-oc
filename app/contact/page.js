@@ -4,8 +4,14 @@ import styles from "../page.module.scss";
 import Presentation from "../components/Presentation";
 import ContactForm from "../components/ContactForm";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+    window.document.title = "Contact | valverine - web developer";
+    window.document.description =
+      "Page de contact du portfolio de développeur web de Valverine. Vous souhaitez me contacter ? N'hésitez pas à m'écrire ici !";
+  }, []);
   return (
     <main>
       <section className={styles.entireContactBlock}>
