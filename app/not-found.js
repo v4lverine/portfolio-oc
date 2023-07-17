@@ -26,6 +26,7 @@ const ErrorPage = styled.section`
   }
   @media (max-width: 1023px) {
     font-size: 0.8em;
+    margin: 30% 5%;
   }
 `;
 //404 homepage
