@@ -10,10 +10,11 @@ const Button = styled.button`
   // background: transparent;
   border-radius: 50px;
   border: 2px solid var(--greenish);
+  text-align: center;
   font-size: 1em;
   cursor: pointer;
   width: 50%;
-  padding-block: 10px;
+  padding: 10px;
   margin-inline: 25%;
   font-size: 0.8em;
 `;
