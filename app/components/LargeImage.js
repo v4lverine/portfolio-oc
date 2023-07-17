@@ -3,8 +3,8 @@ import Image from "next/image";
 const largePictures = (props) => (
   <Image
     src={props.src}
-    height={500}
-    width={500}
+    height={250}
+    width={250}
     quality={50}
     alt={props.alt}
     priority

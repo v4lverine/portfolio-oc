@@ -10,7 +10,6 @@ const BlockTitle = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
   margin-left: 50px;
   @media (max-width: 767px) {
     margin-left: 0;

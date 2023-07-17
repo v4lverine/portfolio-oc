@@ -12,9 +12,9 @@ const Button = styled.button`
   border: 2px solid var(--greenish);
   font-size: 1em;
   cursor: pointer;
-  width: 50%;
-  padding-block: 10px;
-  margin-inline: 25%;
+  // width: 50%;
+  // padding-block: 10px;
+  // margin-inline: 25%;
   font-size: 0.8em;
 `;
 const raleway = Raleway({

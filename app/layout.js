@@ -22,6 +22,11 @@ export const metadata = {
   description:
     "Le portfolio de valverine aka Valentine, web developer full-stack / ancienne journaliste. Besoin de mes services ? Contactez-moi !",
   category: "technology",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
   twitter: {
     card: "summary_large_image",
     title: "valverine - web developer",
@@ -47,7 +52,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={raleway.className}>
-      <body className={delius.variable}>
+      <body className={delius.variable} style={{ position: "relative" }}>
         <Header />
         <Background
           src="/images/aibg.png"

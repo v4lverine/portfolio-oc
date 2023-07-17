@@ -3,12 +3,16 @@ import Image from "next/image";
 const backgroundImage = (props) => (
   <Image
     src={props.src}
-    height={1500}
-    width={2560}
+    fill
     quality={50}
     alt={props.alt}
     priority
-    style={{ zIndex: "-2", position: "fixed" }}
+    style={{
+      zIndex: "-2",
+      position: "absolute",
+      objectFit: "cover",
+      overflow: "hidden",
+    }}
   />
 );
 
