@@ -27,14 +27,14 @@ export default function Collapse(props) {
             : { backgroundColor: "var(--greyish)", color: "var(--beigish)" }
         }
       >
-        <div className={`${styles.toggleTitle} ${raleway.className}`}>
+        <span className={`${styles.toggleTitle} ${raleway.className}`}>
           {props.label}{" "}
           {isOpen ? (
             <FontAwesomeIcon icon={faAngleUp} />
           ) : (
             <FontAwesomeIcon icon={faAngleUp} rotation={180} />
           )}
-        </div>
+        </span>
       </button>
       <AnimatePresence initial={false}>
         {isOpen && (
