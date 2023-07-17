@@ -1,7 +1,6 @@
 .h1 {
   color: var(--greenish);
   text-shadow: 1px 1px 0px rgba(206, 205, 163, 0.8);
-  // padding-left: 20px;
   transition: ease-in-out 0.3s;
   @media (max-width: 1260px) {
     font-size: 1.6em;
@@ -38,7 +37,6 @@
   position: sticky;
   top: 0;
   background-color: #fff;
-  // padding: 1rem;
   padding-block: 0.5rem;
   display: flex;
   justify-content: space-between;
@@ -59,7 +57,6 @@
 /*component skills*/
 .skillsText {
   background: rgba(61, 61, 61, 0.9);
-  // width: auto;
   color: var(--beigish);
   margin-inline: 20%;
   font-size: 1.5em;
@@ -91,7 +88,6 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  // margin: 2%;
   @media (max-width: 767px) {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,10 +121,7 @@
   }
   @media (max-width: 767px) {
     width: auto;
-    // margin-block: 15px;
-    // margin-right: 5%;
     height: auto;
-    // margin: 0;
     padding-inline: 0;
     font-size: 1.5em;
     h3 {
@@ -258,19 +251,9 @@
   padding: 0 0 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0 0 5px 0;
   background-color: #fff;
-  // height: auto;
   & h2 {
-    // margin-bottom: 0;
     font-size: 1.5em;
     background: none;
-  }
-  @media (max-width: 767px), (max-width: 1024px) {
-    // height: auto;
-    // padding-inline: 15px;
-    // padding-bottom: 0;
-    // & h2 {
-    //   // margin-left: 0;
-    // }
   }
 }
 .contentFooter {
@@ -328,7 +311,6 @@
   width: 40px;
   display: block;
   color: #575757;
-  // margin-right: 10px;
 }
 .socialsNav {
   display: flex;
@@ -392,6 +374,5 @@
   }
 }
 .bars {
-  // width: 5%;
   font-size: 1.5em;
 }

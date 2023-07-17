@@ -30,7 +30,6 @@
     --g: 50px; /* the gap */
     --b: 12px; /* border thickness*/
     --c: #82d78c; /* the color */
-    // padding: calc(var(--g) + var(--b));
     --_c: #0000 0 25%, var(--c) 0 50%;
     --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
     --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
@@ -104,7 +103,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // height: auto;
   margin-block: 60px;
   @media (max-width: 767px) {
     flex-direction: column;

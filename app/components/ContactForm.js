@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 import Loader from "./Loader";
 
 const Button = styled.button`
-  // background: transparent;
   border-radius: 50px;
   border: 2px solid var(--greenish);
   text-align: center;

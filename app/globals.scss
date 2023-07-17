@@ -9,14 +9,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh; /*to stick footer to bottom*/
-  // display: grid;
-  // grid-template-columns: repeat(1, 1fr);
-  // grid-template-areas: "header" "main" "footer";
   scroll-padding-top: 170px; /*for automatic scrolling anchor*/
-  // background-image: url("/public/images/aibg.png");
-  @media (max-width: 767px) {
-    // grid-template-columns: 1fr;
-  }
 }
 * h2 {
   margin-left: 50px;
