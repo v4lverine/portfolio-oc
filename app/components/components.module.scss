@@ -361,10 +361,10 @@
   }
   @media (max-width: 767px) {
     height: auto;
-    padding: 40%;
+    width: auto;
     & input,
     textarea {
-      width: auto;
+      width: 15em;
     }
   }
 }
