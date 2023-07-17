@@ -201,10 +201,12 @@
 }
 .toggle {
   margin-bottom: 30px;
+  width: 100%;
 }
 .toggleButton {
   border-radius: 25px;
   border: 2px solid var(--greyish);
+  width: 100%;
 }
 .toggleTitle {
   display: flex;
@@ -362,6 +364,7 @@
   @media (max-width: 767px) {
     height: auto;
     width: auto;
+    padding: 30px 2em;
     & input,
     textarea {
       width: 15em;
